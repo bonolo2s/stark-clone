@@ -157,13 +157,13 @@ header{
 }
 /*content*/
 .side-accordion-container{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 10%;
     left: 0;
     width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .content-container{
@@ -259,7 +259,8 @@ header{
 }
 #img6{
     display: inline-block;
-    width: 500px;
+    width: 90%;
+
 }
 /*JVs timed section*/
 .animation-sec-container{
@@ -368,7 +369,7 @@ header{
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(2,450px);
+    grid-template-columns: repeat(2,40%);
     grid-template-rows: repeat(9,450px);
     gap: 15px;
     border-radius: 10px;
@@ -656,12 +657,13 @@ ul li {
     #trial-btn{
         font-size: 11px;
         margin-right: 25px;
-    }
+    }/*
     .side-accordion-container{ 
-        display: block;   
-    }
+        display: block;
+    }*/
     .side-accordion-container.active{
-        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
     }
     
 }
